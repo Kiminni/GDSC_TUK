@@ -1,0 +1,14 @@
+services:
+  mysql:
+    container_name: mysql
+    volumes:
+      - mysql:/var/lib/mysql
+    image: mysql:latest
+    restart: always
+    ports:
+      - 3306:3306
+    env_file:
+      - db/.env
+
+volumes:
+  mysql:

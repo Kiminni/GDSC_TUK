@@ -3,7 +3,7 @@ services:
     container_name: mysql
     volumes:
       - mysql:/var/lib/mysql
-    image: mysql:latest
+    image: mysql:8.0.33
     restart: always
     ports:
       - 3306:3306
